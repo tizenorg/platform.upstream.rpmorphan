@@ -3,7 +3,7 @@
 
 Summary: 	List packages that have no dependencies (like deborphan)
 Name: 		rpmorphan
-Version:    1.1
+Version:    1.11
 Release: 	1
 Group:		Applications/System
 License:	GPLv2+
