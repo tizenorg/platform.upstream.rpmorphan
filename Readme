@@ -1,0 +1,45 @@
+rpmorphan finds "orphaned"[2,5] packages on your system. It determines
+which packages have no other packages depending on their installation,
+and shows you a list of these packages.  It intends to be clone of
+deborphan Debian tools for rpm packages.
+
+It will try to help you to remove unused packages, for example:
+* after a distribution upgrade
+* when you want to suppress packages after some tests
+
+Several tools are also provided :
+* rpmusage - display rpm packages last use date
+* rpmdep - display the full dependency of an installed rpm package
+* rpmduplicates - find programs with several version installed
+* rpmextra - find installed packages not in distribution
+
+notes :
+*******
+
+For all users :
+[1] this rpm package will make rpmorphan work in command line mode.
+If you want to use a graphical interface, you will need to install extra 
+rpm packages : perl-Tk or perl-Curses-UI.
+
+For Fedora users : 
+[2] Note that orphan is used in the sense of Debian's deborphan, and
+is NOT the same as Fedora orphaned packages which are packages that
+have no current maintainer.
+
+[3] Yum offers a program called 'package-cleanup' which,
+called with the '--leaves' option, can show quickly a list of
+unused library packages.
+
+[4] rpmorphan can be speed up by installing the perl-RPM2 rpm package
+
+For Mandriva users :
+[5] the 'urpme --auto-orphans' command show quickly a a list of
+unused library packages.
+
+quick start
+***********
+rpmorphan --gui --all
+
+-- 
+Eric Gerbier
+$Id: rpmorphan-1.11 | Readme | Mon Mar 21 12:08:17 2011 +0000 | gerbier  $

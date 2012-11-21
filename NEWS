@@ -1,0 +1,148 @@
+			1.11 version
+			-------------
+new features :
+* add suggests option
+* add /etc/rpmorphanrc
+* add env RPMORPHAN_METHOD for debugging
+
+bugfix :
+* fix bug with space in filenames
+-------------------------------------------------------------------------------
+			1.10 version
+			-------------
+new features :
+* display package summary in a popup on S key
+
+bugfix :
+* bugfix eval for Curses (mandriva)
+* fix bad version display
+
+improvment :
+* reduce size/duplicated code in rpmorphan/rpmusage
+* reduce menu length in curses gui (< 72)
+
+others :
+* clean all scripts
+-------------------------------------------------------------------------------
+			1.9 version
+			-------------
+new features :
+- add rpmextra tool
+- add grpmorphan as link to rpmorphan -gui
+others :
+- fix perlcritic warnings
+-------------------------------------------------------------------------------
+			1.8 version
+			-------------
+bugfix : 
+- fix bug on rpmdep ( missing installtime in urpm mode)
+
+new features :
+- add help translation (gui)
+-------------------------------------------------------------------------------
+			1.7 version
+			-------------
+bugfix : 
+- Curses is no more an rpm dependency
+
+new features : 
+- add reload button
+-------------------------------------------------------------------------------
+			1.6 version
+			-------------
+other :
+- add a confirm dialog box on remove action
+- curses window size is now variable to use full available size
+- info window is now scrollable (curses gui)
+-------------------------------------------------------------------------------
+			1.5 version
+			-------------
+new features : 
+- use URPM perl package for faster database access on mandriva
+- can use RPM2 perl package for faster database access (fedora)
+bugfix : 
+- fix a bug on curses interface
+- remove all matching packages
+others :
+- merge spec file with fedora one
+- add info for fedora/mandriva users
+-------------------------------------------------------------------------------
+			1.4 version
+			-------------
+other :
+when removing a package, anf if rpm send some output, the code now check the rpm 
+database to know if the remove works or not
+-------------------------------------------------------------------------------
+			1.3 version
+			-------------
+incompatibility : none
+bugfix : 
+- fix a bug if exclude are set in config file (thanks Szymon Siwek)
+new features : 
+- display number of deleted file
+other :
+-------------------------------------------------------------------------------
+			1.2 version
+			-------------
+incompatibility : none
+bugfix : none
+new features : 
+- write log to /var/log/rpmorphan.log
+- add rpmdep.pl tool
+- add rpmduplicate.pl tool
+other :
+-------------------------------------------------------------------------------
+			1.1 version
+			-------------
+incompatibility : none
+bugfix : none
+new features : 
+- (rpmorphan) add a default target : guess-lib
+- (rpmorphan) add keep-file option, which allow to cutomize the keep file
+- (rpmusage) add a default target : all
+other :
+- the different tools now share a common library
+- rpmlint was used to improve the rpm package
+
+-------------------------------------------------------------------------------
+			1.0 version
+			-------------
+add dry-run (simulation) mode
+(gui) add 3 counters : packages, orphans, selected
+(gui) recursive analysis
+improve virtuals : now check if how many package provide this one
+-------------------------------------------------------------------------------
+			0.9 version
+			-------------
+add another graphical interface (curses), available by the --curses command line
+argument
+add configuration file
+-------------------------------------------------------------------------------
+			0.8 version
+			-------------
+add simple graphical user interface (optionnal), which require
+the perl-tk package :use --gui command line argument
+
+the code has been split in smaller subroutines.
+-------------------------------------------------------------------------------
+			0.4 version
+			-------------
+add optionnal cache, which can be shared by all rpmorphan tools
+to spare rpm query time :
+use --use-cache and --clear-cache command line arguments
+-------------------------------------------------------------------------------
+			0.3 version
+			-------------
+new feature : add rpmusage tool
+-------------------------------------------------------------------------------
+
+			0.2 version
+			-------------
+new feature : add a permanent list of exclude file (default is empty) and
+4 new options for rpmorphan : --zero-keep, --list-keep, --add-keep, --del-keep
+
+-------------------------------------------------------------------------------
+			0.1 version
+			-------------
+
+first public release

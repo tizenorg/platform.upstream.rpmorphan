@@ -1,0 +1,54 @@
+# configuration file exemple for rpmorphan
+# $Id: rpmorphan-1.11 | rpmorphanrc.sample | Tue Jul 31 17:13:56 2012 +0200 | Eric Gerbier  $
+# it can be used as 
+# - host (general) configuration file as /etc/rpmorphanrc
+# - home (user) configuration file as ~/.rpmorphanrc
+# - local configuration file as ./.rpmorphanrc
+# 
+# the program will read them all in order from host to local
+#
+# syntaxe :
+# - all line beginning with "#" are comments
+# - all parameter have the same name as command line arguments, without dash
+# - 0 means false/no, 1 means true/yes
+
+# for example, to use rpmorphan instead of rpmorphan --all --curses
+# you have to use 
+# all = 1
+# curses = 1
+#
+
+## list of all available parameters with the default value
+#help = 0
+#man = 0 
+#verbose = 0
+#dry-run = 0
+#version = 0
+#fullalgo = 0
+#suggests = 0
+#all = 0
+#guess-perl = 0
+#guess-python = 0
+#guess-pike   = 0
+#guess-ruby   = 0
+#guess-common = 0
+#guess-data   = 0
+#guess-doc    = 0
+#guess-dev    = 0
+#guess-lib    = 0
+#guess-all    = 0
+#guess-custom =
+#package=
+#exclude=
+#install-time =
+#access-time  =
+#add-keep     =
+#del-keep     =
+#list-keep    =
+#zero-keep    =
+#keep-file = /var/lib/rpmorphan/keep
+#use-cache    = 0
+#clear-cache  = 0
+#gui    = 0
+#tk     = 0
+#curses = 0

@@ -1,0 +1,16 @@
+Begin4
+Title:          rpmorphan
+Version:        1.11
+Entered-date:   2012-08-03
+Description:    rpmorphan  finds  "orphaned"  packages  on  your system. It determines
+		which packages have no other packages depending on their installation,
+		and shows you a list of these packages.
+		It intends to be clone of deborphan debian tools for rpm packages.
+Keywords:       administration,rpm
+Author:         gerbier@users.sourceforge.net (Eric Gerbier)
+Maintained-by:  gerbier@users.sourceforge.net (Eric Gerbier)
+Primary-site:   http://rpmorphan.sourceforge.net
+		46 Ko rpmorphan-1.11.tar.gz
+Platforms:      linux, works with perl
+Copying-policy: GPL
+End

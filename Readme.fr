@@ -1,0 +1,40 @@
+Le  logiciel  rpmorphan  liste  les  packages  rpm  qui  n'ont plus de
+dépendances avec les autres paquets installés sur votre système.
+C'est un clone du logiciel deborphan de debian pour les packages rpm.
+
+Il peut vous aider pour supprimer les packages inutilisés, par exemple :
+* après une montée de version système
+* lors de la suppression de logiciels après des tests
+
+plusieurs outils sont également fournis :
+* rpmusage : donne la date de la dernière utilisation d'un package
+* rpmdep   : fournit l'ensemble des dependances (recursive) d'un package
+* rpmduplicates : cherche les logiciels qui ont plusieurs versions installées
+* rpmextra : cherche les packages installés hors distribution
+
+notes :
+*******
+Pour tous les utilisateurs
+[1] ce package rpm permet de faire fonctionner rpmorphan en mode
+ligne de commande. Si vous voulez profiter d'une interface graphique,
+vous devez installer des packages rpm suplementaires : perl-Tk ou perl-Curses-UI
+
+Pour les utilisateurs de Fedora :
+[2] la notion d'orphelin est à prendre au sens du logiciel debian deborphan, et
+non pas au sens général de Fedora (packages sans mainteneur).
+
+[3] Yum contient le programme 'package-cleanup', qui appelé avec l'option --leaves, 
+permet d'afficher rapidement les librairies inutilisées
+
+[4] rpmorphan peut être accéléré en installant le package rpm perl-RPM2
+
+Pour les utilisateurs de Mandriva
+[5] la commande 'urpme --auto-orphans' permet d'afficher rapidement les librairies inutilisées.
+
+demarrage rapide
+****************
+rpmorphan.pl --all --gui
+
+-- 
+Eric Gerbier
+$Id: rpmorphan-1.11 | Readme.fr | Mon Mar 21 12:08:17 2011 +0000 | gerbier  $
