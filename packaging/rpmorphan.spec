@@ -12,6 +12,7 @@ BuildArch:	noarch
 
 URL: 	http://rpmorphan.sourceforge.net
 Source: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source1001: 	rpmorphan.manifest
 Requires:	perl
 Requires:	rpm
 
@@ -34,6 +35,7 @@ Several tools are also provided :
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 make %{?_smp_mflags}
@@ -44,6 +46,7 @@ make %{?_smp_mflags}
 
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %doc COPYING
 %{_bindir}/rpmorphan-lib.pl
